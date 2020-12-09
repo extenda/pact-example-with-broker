@@ -7,12 +7,6 @@ this pact file. In order to make these pact files accessible they are uploaded t
 
 ## Instructions
 
-0. start the broker
-
-  - docker and docker-compose is needed
-  - `cd pact-broker && sudo docker-compose up`
-  - web UI under `localhost:80`
-
 1. generate pact file via junit test
 
   - `cd consumer && mvn clean install -DskipTests=false`
@@ -25,13 +19,6 @@ this pact file. In order to make these pact files accessible they are uploaded t
 3. verify pact against producer
 
   - `cd producer && mvn clean install -DskipTests=false`
-  
-4. have a look at `http://localhost:80`
-
-  - overview of pacts
-  - differences between different version of 1 pact
-  - overview of relations of services via a graph
-  
   
 ## Resources
 
