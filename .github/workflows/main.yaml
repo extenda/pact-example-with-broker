@@ -1,7 +1,5 @@
 name: Test with pact broker
-on: 
-  - pull_request
-  - push
+on: push
 
 jobs:
   consumer:
